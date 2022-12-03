@@ -61,6 +61,4 @@ public class AStar extends Controller<Constants.MOVE> {
         }
         return theBestMove;
     }
-
-
 }

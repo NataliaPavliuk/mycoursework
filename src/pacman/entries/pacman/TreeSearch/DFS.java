@@ -48,6 +48,4 @@ public class DFS extends Controller<Constants.MOVE> {
         }
         return best;
     }
-
-
 }

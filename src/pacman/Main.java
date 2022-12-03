@@ -3,6 +3,7 @@ package pacman;
 import java.util.EnumMap;
 
 import pacman.controllers.*;
+import pacman.entries.pacman.TreeSearch.AStar;
 import pacman.entries.pacman.TreeSearch.DFS;
 import pacman.game.Game;
 import pacman.game.GameView;
@@ -15,11 +16,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		Main execute=new Main();
-//		execute.runGame(new NearestPillPacMan(),new GhostsWantToAttack(),visual);
-//		execute.runGame(new StarterPacMan(),new StarterGhosts(),visual);
-		execute.runGame(new DFS(),new GhostsWantToAttack());
-//		execute.runGame(new RandomMovePacMan(),new StarterGhosts());
-//   	execute.runGame(new HumanController(new KeyBoardInput()),new StarterGhosts(),visual);
+		execute.runGame(new NearestPillPacMan(),new StarterGhosts());
 	}
 
     public void runGame(Controller<MOVE> pacManController, Controller<EnumMap<GHOST,MOVE>> ghostController)
